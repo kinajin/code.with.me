@@ -255,10 +255,20 @@ footer {
   padding: 5vh;
 }
 
+footer .footerTitle {
+  display: flex;
+  align-items: center;
+}
+
+footer .footerTitle .soundIcon {
+  margin-left: 1vh;
+  height: 5vh;
+  width: 5vh;
+}
+
 footer .thumbnails {
   display: flex;
   justify-content: space-between;
-  margin-top: 1vh;
 }
 
 footer .thumbnails .thumbnail {
