@@ -137,23 +137,31 @@ table {
 }
 
 div {
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 h1 {
   font-size: 8vh;
+  color: white;
 }
 
 h2 {
   font-size: 6vh;
+  color: white;
 }
 
 h3 {
   font-size: 4vh;
+  color: white;
 }
 
 h4 {
   font-size: 2vh;
+  color: white;
+}
+
+h5 {
+  color: white;
 }
 
 .backgroundVideo {
@@ -164,6 +172,7 @@ h4 {
   min-height: 100%;
   transform: translateX(calc((100% - 100vw) / 2));
   z-index: -1;
+  filter: brightness(70%);
 }
 
 body {
@@ -175,7 +184,6 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 5vh;
-  background-color: purple;
 }
 
 header h2 {
@@ -194,7 +202,6 @@ main {
 main .leftLine {
   width: 200px;
   height: 60vh;
-  background-color: yellow;
 }
 
 main .leftLine .clock {
@@ -205,7 +212,12 @@ main .leftLine .clock {
   justify-content: center;
 }
 
+main .leftLine .weather {
+  height: 20vh;
+}
+
 main .leftLine .dDay {
+  margin: 1vh;
   height: 20vh;
   display: flex;
   flex-direction: column;
@@ -218,52 +230,51 @@ main .leftLine .dDay h3 {
   font-weight: bold;
 }
 
-.middleLine {
+main .middleLine {
   flex-grow: 1;
   height: 60vh;
-  background-color: orange;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.middleLine .circle {
+main .middleLine .circle {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.middleLine .countDown {
+main .middleLine .countDown {
   height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-weight: 900;
 }
 
-.rightLine {
+main .rightLine {
   width: 200px;
   height: 60vh;
-  background-color: darkblue;
 }
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: lefts;
-  background-color: green;
   padding: 5vh;
 }
 
 footer .thumbnails {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 1vh;
 }
 
 footer .thumbnails .thumbnail {
   width: 12vw;
-  height: 8vh;
+  height: 10vh;
 }
 /*# sourceMappingURL=style.css.map */

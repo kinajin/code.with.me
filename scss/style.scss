@@ -1,27 +1,35 @@
 @import "_reset";
-@import "_base";
+@import "_clock";
 
 //for test
 div {
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 //for font size
 
 h1 {
   font-size: 8vh;
+  color: white;
 }
 
 h2 {
   font-size: 6vh;
+  color: white;
 }
 
 h3 {
   font-size: 4vh;
+  color: white;
 }
 
 h4 {
   font-size: 2vh;
+  color: white;
+}
+
+h5 {
+  color: white;
 }
 
 //base
@@ -43,6 +51,7 @@ $side-width: 200px;
   min-height: 100%;
   transform: translateX(calc((100% - 100vw) / 2));
   z-index: -1;
+  filter: brightness(70%);
 }
 
 //font-family
@@ -56,7 +65,7 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 5vh;
-  background-color: purple;
+  // background-color: purple;
 
   //code_with_me
   h2 {
@@ -76,16 +85,22 @@ main {
   .leftLine {
     width: $side-width;
     height: 60vh;
-    background-color: yellow;
+    // background-color: yellow;
 
     .clock {
       height: 20vh;
       @include column-center();
     }
 
+    .weather {
+      height: 20vh;
+    }
+
     .dDay {
+      margin: 1vh;
       height: 20vh;
       @include column-center();
+      // background-color: aquamarine;
 
       h3 {
         margin-top: 1vh;
@@ -93,47 +108,49 @@ main {
       }
     }
   }
-}
 
-.middleLine {
-  flex-grow: 1;
-  height: 60vh;
-  background-color: orange;
-  @include column-center();
-
-  .circle {
+  .middleLine {
+    flex-grow: 1;
+    height: 60vh;
+    // background-color: orange;
     @include column-center();
+
+    .circle {
+      @include column-center();
+    }
+
+    .countDown {
+      height: 10vh;
+      @include column-center();
+      font-weight: 900;
+    }
   }
 
-  .countDown {
-    height: 10vh;
-    @include column-center();
+  .rightLine {
+    width: $side-width;
+    height: 60vh;
+    // background-color: darkblue;
   }
-}
-
-.rightLine {
-  width: $side-width;
-  height: 60vh;
-  background-color: darkblue;
 }
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: lefts;
-  background-color: green;
+  // background-color: green;
 
   padding: 5vh;
 
   .thumbnails {
     display: flex;
-    justify-content: space-around;
-    // justify-content: space-between;
+    // justify-content: space-around;
+    justify-content: space-between;
     // justify-content: space-evenly;
+    margin-top: 1vh;
 
     .thumbnail {
       width: 12vw;
-      height: 8vh;
+      height: 10vh;
     }
   }
 }
