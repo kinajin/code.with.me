@@ -10,26 +10,21 @@ div {
 
 h1 {
   font-size: 8vh;
-  color: white;
 }
 
 h2 {
   font-size: 6vh;
-  color: white;
 }
 
 h3 {
   font-size: 4vh;
-  color: white;
 }
 
 h4 {
-  font-size: 2vh;
-  color: white;
+  font-size: 3vh;
 }
 
 h5 {
-  color: white;
 }
 
 //base
@@ -57,6 +52,7 @@ $side-width: 200px;
 //font-family
 body {
   font-family: roboto;
+  color: white;
 }
 
 //header
@@ -66,17 +62,6 @@ header {
   align-items: center;
   margin-top: 5vh;
   // background-color: purple;
-
-  //code_with_me
-  h2 {
-    color: white;
-    font-weight: 900;
-  }
-
-  //Hi_Kina
-  h3 {
-    color: white;
-  }
 }
 
 main {
@@ -94,6 +79,7 @@ main {
 
     .weather {
       height: 20vh;
+      @include column-center();
     }
 
     .dDay {

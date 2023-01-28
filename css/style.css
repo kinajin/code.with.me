@@ -142,26 +142,18 @@ div {
 
 h1 {
   font-size: 8vh;
-  color: white;
 }
 
 h2 {
   font-size: 6vh;
-  color: white;
 }
 
 h3 {
   font-size: 4vh;
-  color: white;
 }
 
 h4 {
-  font-size: 2vh;
-  color: white;
-}
-
-h5 {
-  color: white;
+  font-size: 3vh;
 }
 
 .backgroundVideo {
@@ -177,6 +169,7 @@ h5 {
 
 body {
   font-family: roboto;
+  color: white;
 }
 
 header {
@@ -184,15 +177,6 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 5vh;
-}
-
-header h2 {
-  color: white;
-  font-weight: 900;
-}
-
-header h3 {
-  color: white;
 }
 
 main {
@@ -214,6 +198,10 @@ main .leftLine .clock {
 
 main .leftLine .weather {
   height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 main .leftLine .dDay {

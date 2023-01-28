@@ -7,8 +7,6 @@ function getClock() {
   const second = String(date.getSeconds()).padStart(2, "0");
   const fullClock = hour + ":" + minute + ":" + second;
   clock.innerHTML = fullClock;
-
-  console.log(fullClock);
 }
 
 setInterval(getClock, 1000);
