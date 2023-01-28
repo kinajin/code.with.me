@@ -5,30 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Code with me</title>
   </head>
   <body>
-    <video autoplay loop class="backgroundVideo">
-      <source src="fire.mp4" type="video/mp4" />
+    <video autoplay muted loop class="backgroundVideo">
+      <source src="videos/fire.mp4" type="video/mp4" />
       <strong>Your browser does not support the video tag.</strong>
     </video>
 
     <header>
-      <h3>Hi Kina</h3>
-      <h2>Code with me</h2>
+      <h3 class="hiUser">Hi Kina</h3>
+      <h2 class="codeWithMe">Code with me</h2>
     </header>
 
-    <div class="leftLine">
-      <div class="clock"></div>
-      <div class="dDay"></div>
-    </div>
+    <main>
+      <div class="leftLine">
+        <div class="clock">clock</div>
+        <div class="dDay">
+          <h4>노마드코더</h4>
+          <h4>10주 스터디 종료까지</h4>
+          <h3>30 D</h3>
+        </div>
+      </div>
 
-    <div class="rightLine">
-      <div class="studyGoal"></div>
-    </div>
+      <div class="middleLine">
+        <div class="circle">circle</div>
+        <div class="countDown">
+          <h1>01:02:36</h1>
+        </div>
+      </div>
 
-    <div class="bottom">
+      <div class="rightLine">
+        <div class="studyGoal">studyGoal</div>
+      </div>
+    </main>
+
+    <footer>
       <h4>CHOOSE YOUR STYLE</h4>
 
       <div class="thumbnails">
@@ -39,6 +52,6 @@
         <div class="thumbnail"></div>
         <div class="thumbnail"></div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
