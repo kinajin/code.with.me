@@ -1,9 +1,7 @@
 const todoForm = document.querySelector(".todoForm");
 const todoList = document.querySelector(".todoList");
-const todoInput = document.querySelector("input");
-
+const todoInput = document.querySelector(".todoInput");
 const TODOS_KEY = "TODOS_KEY";
-
 let toDos = [];
 
 function saveToDos() {

@@ -1,6 +1,11 @@
 @import "_reset";
 @import "_clock";
 
+// for hidden
+.hidden {
+  display: none;
+}
+
 //for test
 div {
   border: 1px solid white;
@@ -20,7 +25,7 @@ h3 {
 }
 
 h4 {
-  font-size: 3vh;
+  font-size: 1em;
 }
 
 //base
@@ -49,6 +54,7 @@ $side-width: 200px;
 body {
   font-family: roboto;
   color: white;
+  font-weight: 900;
 }
 
 //header
@@ -57,6 +63,12 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 5vh;
+
+  .hiUser {
+  }
+
+  .codeWithMe {
+  }
 }
 
 main {
@@ -107,6 +119,10 @@ main {
   .rightLine {
     width: $side-width;
     height: 60vh;
+    //studyGoal
+    h4 {
+      margin: 1vh 0;
+    }
   }
 }
 
@@ -119,6 +135,7 @@ footer {
   .footerTitle {
     display: flex;
     align-items: center;
+    font-weight: 900;
 
     .soundIcon {
       margin-left: 1vh;
@@ -132,7 +149,7 @@ footer {
     justify-content: space-between;
 
     .thumbnail {
-      width: 10vw;
+      width: 12vw;
       height: 10vh;
       object-fit: cover;
       border-radius: 1em;

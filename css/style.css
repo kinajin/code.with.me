@@ -136,6 +136,10 @@ table {
   border-spacing: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 div {
   border: 1px solid white;
 }
@@ -153,7 +157,7 @@ h3 {
 }
 
 h4 {
-  font-size: 3vh;
+  font-size: 1em;
 }
 
 .backgroundVideo {
@@ -170,6 +174,7 @@ h4 {
 body {
   font-family: roboto;
   color: white;
+  font-weight: 900;
 }
 
 header {
@@ -248,6 +253,10 @@ main .rightLine {
   height: 60vh;
 }
 
+main .rightLine h4 {
+  margin: 1vh 0;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -258,6 +267,7 @@ footer {
 footer .footerTitle {
   display: flex;
   align-items: center;
+  font-weight: 900;
 }
 
 footer .footerTitle .soundIcon {
@@ -272,7 +282,7 @@ footer .thumbnails {
 }
 
 footer .thumbnails .thumbnail {
-  width: 10vw;
+  width: 12vw;
   height: 10vh;
   object-fit: cover;
   border-radius: 1em;

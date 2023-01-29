@@ -9,101 +9,121 @@
     <title>Code with me</title>
   </head>
   <body>
-    <video autoplay muted loop class="backgroundVideo">
-      <source src="videos/fire.mp4" type="video/mp4" />
-      <strong>Your browser does not support the video tag.</strong>
-    </video>
+    <div class="welcome">
+      <form class="loginForm hidden">
+        <input
+          class="loginInput"
+          required
+          maxlength="15"
+          type="text"
+          placeholder="your name?"
+        />
+        <input class="loginSubmit" type="submit" value="log in" />
+      </form>
+    </div>
 
-    <header>
-      <h3 class="hiUser">Hi Kina</h3>
-      <h2 class="codeWithMe">Code with me</h2>
-    </header>
+    <div class="dashboard hidden">
+      <video autoplay muted loop class="backgroundVideo">
+        <source src="videos/fire.mp4" type="video/mp4" />
+        <strong>Your browser does not support the video tag.</strong>
+      </video>
 
-    <main>
-      <div class="leftLine">
-        <div class="clock">
-          <h3 id="clock">00:00:00</h3>
+      <header>
+        <h3 class="hiUser">Hi Kina</h3>
+        <h2 class="codeWithMe">Code with me</h2>
+      </header>
+
+      <main>
+        <div class="leftLine">
+          <div class="clock">
+            <h3 id="clock">00:00:00</h3>
+          </div>
+
+          <div class="weather">
+            <h4 id="temp">25</h4>
+            <h4 id="area">samjungdong</h4>
+            <h4 id="weather">sunny</h4>
+          </div>
+
+          <div class="dDay">
+            <h4>노마드코더</h4>
+            <h4>10주 스터디 종료까지</h4>
+            <h3>30 D</h3>
+          </div>
         </div>
 
-        <div class="weather">
-          <h4 id="temp">25</h4>
-          <h4 id="area">samjungdong</h4>
-          <h4 id="weather">sunny</h4>
+        <div class="middleLine">
+          <div class="circle">circle</div>
+          <div class="countDown">
+            <h1>01:02:36</h1>
+          </div>
         </div>
 
-        <div class="dDay">
-          <h4>노마드코더</h4>
-          <h4>10주 스터디 종료까지</h4>
-          <h3>30 D</h3>
+        <div class="rightLine">
+          <div class="studyGoal">
+            <h4>StudyGoal</h4>
+
+            <form class="todoForm">
+              <input
+                class="todoInput"
+                type="text"
+                placeholder="Write a Todo and press enter"
+              />
+            </form>
+
+            <ul class="todoList"></ul>
+          </div>
         </div>
-      </div>
+      </main>
 
-      <div class="middleLine">
-        <div class="circle">circle</div>
-        <div class="countDown">
-          <h1>01:02:36</h1>
+      <footer>
+        <div class="footerTitle">
+          <h4>CHOOSE YOUR STYLE</h4>
+          <div class="soundIcon">
+            <audio style="display: none" src="" controls autoplay loop></audio>
+          </div>
         </div>
-      </div>
 
-      <div class="rightLine">
-        <div class="studyGoal">
-          <h4>StudyGoal</h4>
+        <div class="thumbnails">
+          <img
+            class="thumbnail fire"
+            src="videos/fire_thumbnail.png"
+            alt="fire_thumbnail"
+          />
 
-          <form class="todoForm">
-            <input type="text" placeholder="Write a Todo and press enter" />
-          </form>
+          <img
+            class="thumbnail rainy"
+            src="videos/rainy_thumbnail.png"
+            alt="fire_thumbnail"
+          />
 
-          <ul class="todoList"></ul>
+          <img
+            class="thumbnail wood"
+            src="videos/wood_thumbnail.png"
+            alt="fire_thumbnail"
+          />
+
+          <img
+            class="thumbnail typing"
+            src="videos/typing_thumbnail.png"
+            alt="fire_thumbnail"
+          />
+
+          <img
+            class="thumbnail beach"
+            src="videos/beach_thumbnail.png"
+            alt="fire_thumbnail"
+          />
+          <img
+            class="thumbnail grass"
+            src="videos/grass_thumbnail.png"
+            alt="fire_thumbnail"
+          />
         </div>
-      </div>
-    </main>
+      </footer>
+    </div>
 
-    <footer>
-      <div class="footerTitle">
-        <h4>CHOOSE YOUR STYLE</h4>
-        <div class="soundIcon">
-          <audio style="display: none" src="" controls autoplay loop></audio>
-        </div>
-      </div>
-
-      <div class="thumbnails">
-        <img
-          class="thumbnail fire"
-          src="videos/fire_thumbnail.png"
-          alt="fire_thumbnail"
-        />
-
-        <img
-          class="thumbnail rainy"
-          src="videos/rainy_thumbnail.png"
-          alt="fire_thumbnail"
-        />
-
-        <img
-          class="thumbnail wood"
-          src="videos/wood_thumbnail.png"
-          alt="fire_thumbnail"
-        />
-
-        <img
-          class="thumbnail typing"
-          src="videos/typing_thumbnail.png"
-          alt="fire_thumbnail"
-        />
-
-        <img
-          class="thumbnail beach"
-          src="videos/beach_thumbnail.png"
-          alt="fire_thumbnail"
-        />
-        <img
-          class="thumbnail grass"
-          src="videos/grass_thumbnail.png"
-          alt="fire_thumbnail"
-        />
-      </div>
-    </footer>
-
+    <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/todo.js"></script>
