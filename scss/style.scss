@@ -81,6 +81,18 @@ $side-width: 30vh;
 }
 
 //video
+
+.welcomeVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -1;
+  filter: brightness(70%);
+}
+
 .backgroundVideo {
   position: fixed;
   right: 0;
