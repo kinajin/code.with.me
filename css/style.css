@@ -136,14 +136,6 @@ table {
   border-spacing: 0;
 }
 
-.hidden {
-  display: none;
-}
-
-div {
-  border: 1px solid white;
-}
-
 h1 {
   font-size: 8vh;
 }
@@ -158,6 +150,18 @@ h3 {
 
 h4 {
   font-size: 1em;
+}
+
+.loginForm {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginForm .loginInput {
+  margin: 5vh;
 }
 
 .backgroundVideo {
@@ -194,28 +198,39 @@ main .leftLine {
 }
 
 main .leftLine .clock {
-  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 15vh;
+  border-radius: 2vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 2vh;
+  color: black;
 }
 
 main .leftLine .weather {
-  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 15vh;
+  border-radius: 2vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 2vh;
+  color: black;
 }
 
 main .leftLine .dDay {
-  margin: 1vh;
-  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 15vh;
+  border-radius: 2vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 2vh;
+  color: black;
 }
 
 main .leftLine .dDay h3 {
@@ -257,6 +272,42 @@ main .rightLine h4 {
   margin: 1vh 0;
 }
 
+main .rightLine input {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1vh;
+  width: 20vw;
+  height: 3vh;
+  padding-left: 1vh;
+  margin-bottom: 2vh;
+}
+
+main .rightLine input::placeholder {
+  color: black;
+}
+
+main .rightLine li {
+  margin: 0.5vh 0;
+}
+
+main .rightLine li button {
+  padding: 0.5vh 1vh;
+  margin-left: 1vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  border-radius: 6px;
+  color: #3d3d3d;
+  background: #fff;
+  border: none;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+main .rightLine li button button:focus {
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -286,5 +337,9 @@ footer .thumbnails .thumbnail {
   height: 10vh;
   object-fit: cover;
   border-radius: 1em;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

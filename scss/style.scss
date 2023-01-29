@@ -1,14 +1,9 @@
 @import "_reset";
 @import "_clock";
 
-// for hidden
-.hidden {
-  display: none;
-}
-
 //for test
 div {
-  border: 1px solid white;
+  // border: 1px solid white;
 }
 
 //for font size
@@ -35,8 +30,36 @@ h4 {
   align-items: center;
   justify-content: center;
 }
+
+@mixin widget-style {
+  height: 15vh;
+  border-radius: 2vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 2vh;
+  color: black;
+}
+
+@mixin input {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1vh;
+  width: 20vw;
+  height: 3vh;
+  padding-left: 1vh;
+  margin-bottom: 2vh;
+}
+
 //left and right side width
 $side-width: 200px;
+
+// for login form
+
+.loginForm {
+  height: 90vh;
+  @include column-center();
+  .loginInput {
+    margin: 5vh;
+  }
+}
 
 //video
 .backgroundVideo {
@@ -79,21 +102,18 @@ main {
     height: 60vh;
 
     .clock {
-      height: 20vh;
       @include column-center();
+      @include widget-style();
     }
 
     .weather {
-      height: 20vh;
       @include column-center();
+      @include widget-style();
     }
 
     .dDay {
-      margin: 1vh;
-      height: 20vh;
       @include column-center();
-
-      h3 {
+      @include widget-style() h3 {
         margin-top: 1vh;
         font-weight: bold;
       }
@@ -122,6 +142,41 @@ main {
     //studyGoal
     h4 {
       margin: 1vh 0;
+    }
+
+    input {
+      @include input;
+    }
+    input::placeholder {
+      color: black;
+    }
+
+    li {
+      margin: 0.5vh 0;
+
+      button {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        padding: 0.5vh 1vh;
+
+        margin-left: 1vh;
+        font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+        border-radius: 6px;
+        color: #3d3d3d;
+        background: #fff;
+        border: none;
+        box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+
+        button:focus {
+          box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+            0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+          outline: 0;
+        }
+      }
     }
   }
 }
@@ -156,4 +211,9 @@ footer {
     }
     // }
   }
+}
+
+// for hidden
+.hidden {
+  display: none;
 }
