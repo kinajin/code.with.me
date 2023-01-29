@@ -26,8 +26,8 @@ function onGeoOk(position) {
       console.log(tempData);
 
       area.innerHTML = areaData;
-      weather.innerHTML = weatherData;
-      temp.innerHTML = tempData;
+      weather.innerHTML = "Weather : " + weatherData;
+      temp.innerHTML = tempData + "°C";
     });
 }
 
