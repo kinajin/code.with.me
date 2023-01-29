@@ -3,13 +3,13 @@ clockTitle.innerHTML = "00:00:00";
 let t = 3600;
 
 function getClock() {
-  let hours = String(Math.floor(t / 1000 / 60 / 60) % 24).padStart(2, "0");
-  let minutes = String(Math.floor(t / 1000 / 60) % 60).padStart(2, "0");
-  let seconds = String(Math.floor(t / 1000) % 60).padStart(2, "0");
-  console.log(t);
+  let minutes = Math.floor(t / 60);
+
+  let seconds = Math.floor(t % 60);
+  console.log((t / 1000 / 60) % 24);
   console.log("s" + seconds);
   console.log("m" + minutes);
-  clockTitle.innerText = hours + ":" + minutes + ":" + seconds;
+  clockTitle.innerText = "00" + ":" + minutes + ":" + seconds;
   t--;
 }
 getClock();
