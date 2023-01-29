@@ -272,7 +272,9 @@ footer .thumbnails {
 }
 
 footer .thumbnails .thumbnail {
-  width: 12vw;
+  width: 10vw;
   height: 10vh;
+  object-fit: cover;
+  border-radius: 1em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,27 +15,27 @@ function changeFireVideo() {
 
 function changeRainyVideo() {
   backgroundVideo.src = "videos/rainy.mp4";
-  console.log(backgroundVideo);
+  audio.src = "videos/rainy_sound.mp3";
 }
 
 function changeWoodVideo() {
   backgroundVideo.src = "videos/wood.mp4";
-  console.log(backgroundVideo);
+  audio.src = "videos/wood_sound.mp3";
 }
 
 function changeTypingVideo() {
   backgroundVideo.src = "videos/typing.mp4";
-  console.log(backgroundVideo);
+  audio.src = "videos/typing_sound.mp3";
 }
 
 function changeBeachVideo() {
   backgroundVideo.src = "videos/beach.mp4";
-  console.log(backgroundVideo);
+  audio.src = "videos/beach_sound.mp3";
 }
 
 function changeGrassVideo() {
   backgroundVideo.src = "videos/grass.mp4";
-  console.log(backgroundVideo);
+  audio.src = "videos/grass_sound.mp3";
 }
 
 fire.addEventListener("click", changeFireVideo);

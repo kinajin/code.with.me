@@ -132,8 +132,11 @@ footer {
     justify-content: space-between;
 
     .thumbnail {
-      width: 12vw;
+      width: 10vw;
       height: 10vh;
+      object-fit: cover;
+      border-radius: 1em;
     }
+    // }
   }
 }
