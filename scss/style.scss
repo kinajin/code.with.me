@@ -34,25 +34,44 @@ h4 {
 @mixin widget-style {
   height: 15vh;
   border-radius: 2vh;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 2vh;
-  color: black;
+  color: white;
+}
+
+@mixin footer_style {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: lefts;
+  padding: 2vh;
+  width: 95vw;
 }
 
 @mixin input {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 1vh;
-  width: 20vw;
   height: 3vh;
-  padding-left: 1vh;
+  width: 20vh;
+  padding: 0 2vh;
   margin-bottom: 2vh;
 }
 
+@mixin studyGoal {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: lefts;
+  padding: 2vh;
+  // height: 50vh;
+}
+
 //left and right side width
-$side-width: 200px;
+$side-width: 30vh;
 
 // for login form
-
 .loginForm {
   height: 90vh;
   @include column-center();
@@ -140,41 +159,44 @@ main {
     width: $side-width;
     height: 60vh;
     //studyGoal
-    h4 {
-      margin: 1vh 0;
-    }
 
-    input {
-      @include input;
-    }
-    input::placeholder {
-      color: black;
-    }
+    .studyGoal {
+      @include studyGoal() h4 {
+        margin: 1vh 0;
+      }
 
-    li {
-      margin: 0.5vh 0;
+      input {
+        @include input;
+      }
+      input::placeholder {
+        color: black;
+      }
 
-      button {
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        padding: 0.5vh 1vh;
+      li {
+        margin: 0.5vh 0;
 
-        margin-left: 1vh;
-        font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
-        border-radius: 6px;
-        color: #3d3d3d;
-        background: #fff;
-        border: none;
-        box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
+        button {
+          // display: flex;
+          // flex-direction: column;
+          // align-items: center;
+          padding: 0.5vh 1vh;
 
-        button:focus {
-          box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
-            0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-          outline: 0;
+          margin-left: 1vh;
+          font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+          border-radius: 6px;
+          color: #3d3d3d;
+          background: #fff;
+          border: none;
+          box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+
+          button:focus {
+            box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+              0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+            outline: 0;
+          }
         }
       }
     }
@@ -182,34 +204,34 @@ main {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: lefts;
-  padding: 5vh;
+  @include column-center();
+  .footerBackground {
+    @include footer_style .footerTitle {
+      display: flex;
+      align-items: center;
+      font-weight: 900;
 
-  .footerTitle {
-    display: flex;
-    align-items: center;
-    font-weight: 900;
-
-    .soundIcon {
-      margin-left: 1vh;
-      height: 5vh;
-      width: 5vh;
+      .soundIcon {
+        @include column-center();
+        margin-left: 1vh;
+        height: 5vh;
+        width: 5vh;
+        // background-color: #fff;
+      }
     }
-  }
 
-  .thumbnails {
-    display: flex;
-    justify-content: space-between;
+    .thumbnails {
+      display: flex;
+      justify-content: space-between;
 
-    .thumbnail {
-      width: 12vw;
-      height: 10vh;
-      object-fit: cover;
-      border-radius: 1em;
+      .thumbnail {
+        width: 12vw;
+        height: 10vh;
+        object-fit: cover;
+        border-radius: 1em;
+      }
+      // }
     }
-    // }
   }
 }
 

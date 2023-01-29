@@ -193,7 +193,7 @@ main {
 }
 
 main .leftLine {
-  width: 200px;
+  width: 30vh;
   height: 60vh;
 }
 
@@ -204,9 +204,9 @@ main .leftLine .clock {
   justify-content: center;
   height: 15vh;
   border-radius: 2vh;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 2vh;
-  color: black;
+  color: white;
 }
 
 main .leftLine .weather {
@@ -216,9 +216,9 @@ main .leftLine .weather {
   justify-content: center;
   height: 15vh;
   border-radius: 2vh;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 2vh;
-  color: black;
+  color: white;
 }
 
 main .leftLine .dDay {
@@ -228,9 +228,9 @@ main .leftLine .dDay {
   justify-content: center;
   height: 15vh;
   border-radius: 2vh;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 2vh;
-  color: black;
+  color: white;
 }
 
 main .leftLine .dDay h3 {
@@ -264,32 +264,41 @@ main .middleLine .countDown {
 }
 
 main .rightLine {
-  width: 200px;
+  width: 30vh;
   height: 60vh;
 }
 
-main .rightLine h4 {
+main .rightLine .studyGoal {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: lefts;
+  padding: 2vh;
+}
+
+main .rightLine .studyGoal h4 {
   margin: 1vh 0;
 }
 
-main .rightLine input {
+main .rightLine .studyGoal input {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 1vh;
-  width: 20vw;
   height: 3vh;
-  padding-left: 1vh;
+  width: 20vh;
+  padding: 0 2vh;
   margin-bottom: 2vh;
 }
 
-main .rightLine input::placeholder {
+main .rightLine .studyGoal input::placeholder {
   color: black;
 }
 
-main .rightLine li {
+main .rightLine .studyGoal li {
   margin: 0.5vh 0;
 }
 
-main .rightLine li button {
+main .rightLine .studyGoal li button {
   padding: 0.5vh 1vh;
   margin-left: 1vh;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
@@ -303,7 +312,7 @@ main .rightLine li button {
   touch-action: manipulation;
 }
 
-main .rightLine li button button:focus {
+main .rightLine .studyGoal li button button:focus {
   box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
   outline: 0;
 }
@@ -311,28 +320,42 @@ main .rightLine li button button:focus {
 footer {
   display: flex;
   flex-direction: column;
-  align-items: lefts;
-  padding: 5vh;
+  align-items: center;
+  justify-content: center;
 }
 
-footer .footerTitle {
+footer .footerBackground {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: lefts;
+  padding: 2vh;
+  width: 95vw;
+}
+
+footer .footerBackground .footerTitle {
   display: flex;
   align-items: center;
   font-weight: 900;
 }
 
-footer .footerTitle .soundIcon {
+footer .footerBackground .footerTitle .soundIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-left: 1vh;
   height: 5vh;
   width: 5vh;
 }
 
-footer .thumbnails {
+footer .footerBackground .thumbnails {
   display: flex;
   justify-content: space-between;
 }
 
-footer .thumbnails .thumbnail {
+footer .footerBackground .thumbnails .thumbnail {
   width: 12vw;
   height: 10vh;
   object-fit: cover;

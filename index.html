@@ -58,9 +58,9 @@
         </div>
 
         <div class="middleLine">
-          <div class="circle">circle</div>
           <div class="countDown">
-            <h1>01:02:36</h1>
+            <h3>Try your best in one hour!</h3>
+            <h1 id="timer">00:00:00</h1>
           </div>
         </div>
 
@@ -69,11 +69,7 @@
             <h4>Study Goal</h4>
 
             <form class="todoForm">
-              <input
-                class="todoInput"
-                type="text"
-                placeholder="Write Todo and Press Enter"
-              />
+              <input class="todoInput" type="text" placeholder="Write Here" />
             </form>
 
             <ul class="todoList"></ul>
@@ -82,48 +78,57 @@
       </main>
 
       <footer>
-        <div class="footerTitle">
-          <h4>CHOOSE YOUR STYLE</h4>
-          <div class="soundIcon">
-            <audio style="display: none" src="" controls autoplay loop></audio>
+        <div class="footerBackground">
+          <div class="footerTitle">
+            <h4>CHOOSE YOUR STYLE</h4>
+            <div class="soundIcon">
+              🔇
+              <audio
+                style="display: none"
+                src=""
+                controls
+                autoplay
+                loop
+              ></audio>
+            </div>
           </div>
-        </div>
 
-        <div class="thumbnails">
-          <img
-            class="thumbnail fire"
-            src="videos/fire_thumbnail.png"
-            alt="fire_thumbnail"
-          />
+          <div class="thumbnails">
+            <img
+              class="thumbnail fire"
+              src="videos/fire_thumbnail.png"
+              alt="fire_thumbnail"
+            />
 
-          <img
-            class="thumbnail rainy"
-            src="videos/rainy_thumbnail.png"
-            alt="fire_thumbnail"
-          />
+            <img
+              class="thumbnail rainy"
+              src="videos/rainy_thumbnail.png"
+              alt="fire_thumbnail"
+            />
 
-          <img
-            class="thumbnail wood"
-            src="videos/wood_thumbnail.png"
-            alt="fire_thumbnail"
-          />
+            <img
+              class="thumbnail wood"
+              src="videos/wood_thumbnail.png"
+              alt="fire_thumbnail"
+            />
 
-          <img
-            class="thumbnail typing"
-            src="videos/typing_thumbnail.png"
-            alt="fire_thumbnail"
-          />
+            <img
+              class="thumbnail typing"
+              src="videos/typing_thumbnail.png"
+              alt="fire_thumbnail"
+            />
 
-          <img
-            class="thumbnail beach"
-            src="videos/beach_thumbnail.png"
-            alt="fire_thumbnail"
-          />
-          <img
-            class="thumbnail grass"
-            src="videos/grass_thumbnail.png"
-            alt="fire_thumbnail"
-          />
+            <img
+              class="thumbnail beach"
+              src="videos/beach_thumbnail.png"
+              alt="fire_thumbnail"
+            />
+            <img
+              class="thumbnail grass"
+              src="videos/grass_thumbnail.png"
+              alt="fire_thumbnail"
+            />
+          </div>
         </div>
       </footer>
     </div>
@@ -133,5 +138,6 @@
     <script src="js/weather.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/video.js"></script>
+    <script src="js/countdown.js"></script>
   </body>
 </html>
