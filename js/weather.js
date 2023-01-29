@@ -25,9 +25,9 @@ function onGeoOk(position) {
       console.log("-----");
       console.log(tempData);
 
-      area.innerHTML = areaData;
-      weather.innerHTML = "Weather : " + weatherData;
-      temp.innerHTML = tempData + "°C";
+      area.innerHTML = "📍 " + areaData;
+      weather.innerHTML = "🛰️ " + "Weather : " + weatherData;
+      temp.innerHTML = "🌡️ " + tempData + "°C";
     });
 }
 
